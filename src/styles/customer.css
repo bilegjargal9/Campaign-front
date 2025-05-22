@@ -1,0 +1,26 @@
+.custom-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #b2b2b2;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #CAD3E7;
+    border-color: #CAD3E7;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

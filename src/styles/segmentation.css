@@ -1,0 +1,40 @@
+/* Custom styling for segmentation page */
+
+.segment-card {
+    transition: all 0.2s ease-in-out;
+}
+
+.segment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.segment-list-item {
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.segment-list-item.active {
+    border-left-color: #405fa3;
+    background-color: rgba(64, 95, 163, 0.05);
+}
+
+.segment-list-item:hover:not(.active) {
+    border-left-color: #e2e8f0;
+}
+
+/* Animation for modals */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.2s ease-out forwards;
+}
